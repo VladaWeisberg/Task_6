@@ -21,7 +21,7 @@ public class Main
     {
         double term = 1;
         double sum = 1;
-        double sumWithN = 1;
+        double sumWithEpsilon = 1;
 
         for (int i = 1; Math.abs(term) > epsilon; i++)
         {
@@ -32,10 +32,10 @@ public class Main
                 sum += term;
             }
 
-            sumWithN += term;
+            sumWithEpsilon += term;
         }
 
-        double[] arraySums= {sum, sumWithN};
+        double[] arraySums= {sum, sumWithEpsilon};
         return arraySums[index];
     }
 
